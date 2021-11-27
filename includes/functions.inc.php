@@ -136,4 +136,5 @@ function emptyInputLogin($username,$pwd){
         $_SESSION['useruid'] = $uidExists["usersUid"];
         header("location: ../dashboard.php");
         exit();
-    users
+    }
+}

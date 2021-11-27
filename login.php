@@ -3,7 +3,8 @@ include_once 'header.php'
 ?>
     
 <section class="signup-form">
-<h2>Login</h2>
+<h2> Student Login</h2>
+<div class="container">
 <form action="includes/login.inc.php" method="post">
 
 <input type="text" name="uid" placeholder="Username/Email">
@@ -11,7 +12,7 @@ include_once 'header.php'
 <button type="submit" name="submit">Login</button>
 
 </form>
-
+</div>
 <?php
 
 if (isset($_GET["error"])) {

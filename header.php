@@ -10,7 +10,7 @@ include_once 'includes/functions.inc.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kartikstyle.css">
+    <link rel="stylesheet" href="css/kartikstyle.css">
 </head>
 
 <body>
@@ -27,8 +27,8 @@ include_once 'includes/functions.inc.php';
                     echo "";
                     echo "<li><a href='includes/logout.inc.php'>LogOut</a></li>";
                 } else {
-                    // echo "<li><a href='signup.php'>Sign Up</a></li>";
-                    echo "<li><a href='login.php'>Login</a></li>";
+                    echo "<li><a href='signup.php'>Sign Up</a></li>";
+                    // echo "<li><a href='login.php'>Login</a></li>";
                 }
                 ?>
             </ul>
