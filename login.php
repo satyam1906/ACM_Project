@@ -1,7 +1,7 @@
 <?php
 include_once 'header.php'
 ?>
-    
+<link rel="stylesheet" href="login_vikram.css">  
 <section class="signup-form">
 <h2> Student Login</h2>
 <div class="container">
