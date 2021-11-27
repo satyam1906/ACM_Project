@@ -1,6 +1,6 @@
 <?php 
   session_start(); 
-  include_once 'D:\XAMPP\htdocs\ACMProject\ACM_Project\includes\functions.inc.php';
+  include_once 'includes/functions.inc.php';
 ?>
 
 <!DOCTYPE html>
