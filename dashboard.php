@@ -4,8 +4,8 @@ include_once 'header.php'
 
 <section>
 <?php
-if (isset($_SESSION['studsuid'])) {
-        echo "<p> Hello  ".$_SESSION['studsuid']." !!</p>";
+if (isset($_SESSION['usersuid'])) {
+        echo "<p> Hello  ".$_SESSION['usersuid']." !!</p>";
         }
 ?>
 
