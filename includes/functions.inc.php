@@ -54,7 +54,7 @@ function pwdMatch($pwd,$pwdRepeat) {
 
 function uidExists($conn, $username,$email) {
 
-    $sql= "SELECT * FROM users  WHERE usersUid = ? OR usersEmail = ?;";
+    $sql= "SELECT * FROM studs  WHERE studsUid = ? OR studsEmail = ?;";
 
     $stmt = mysqli_stmt_init($conn);
 
@@ -81,7 +81,7 @@ function uidExists($conn, $username,$email) {
 
 function createUser($conn,$name,$email,$username,$pwd) {
 
-    $sql= "INSERT INTO users (usersName,usersEmail,usersUid,usersPwd) VALUES (?,?,?,?);";
+    $sql= "INSERT INTO studs (studsName,studsEmail,studsUid,studsPwd) VALUES (?,?,?,?);";
 
     $stmt = mysqli_stmt_init($conn);
 
@@ -122,7 +122,7 @@ function emptyInputLogin($username,$pwd){
         header("location: ../login.php?error=wronglogin");  
     }
 
-    $pwdHashed = $uidExists["usersPwd"];
+    $pwdHashed = $uidExists["studsPwd"];
     $checkPwd = password_verify($pwd,$pwdHashed);
 
     if ($checkPwd == false) {
@@ -132,8 +132,8 @@ function emptyInputLogin($username,$pwd){
 
     else if ($checkPwd == true){
         session_start();
-        $_SESSION['userid'] = $uidExists["usersId"];
-        $_SESSION['useruid'] = $uidExists["usersUid"];
+        $_SESSION['userid'] = $uidExists["studsId"];
+        $_SESSION['useruid'] = $uidExists["studsUid"];
         header("location: ../dashboard.php");
         exit();
     }
