@@ -28,7 +28,7 @@ include_once 'includes/functions.inc.php';
                     echo "<li><a href='includes/logout.inc.php'>LogOut</a></li>";
                 } else {
                     echo "<li><a href='signup.php'>Sign Up</a></li>";
-                    // echo "<li><a href='login.php'>Login</a></li>";
+                    echo "<li><a href='login.php'>Login</a></li>";
                 }
                 ?>
             </ul>
